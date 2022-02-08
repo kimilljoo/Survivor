@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
         public int revialCount { get; private set; } = 0;           // 남은 부활 횟수
     }
 
+    public PlayerInfo playerinfo;
+
     private static GameManager _instance;
     public static GameManager Instance
     {

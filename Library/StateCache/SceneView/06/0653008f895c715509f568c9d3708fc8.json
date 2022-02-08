@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-2.0693359375,"y":-1.3467130661010743,"z":-116.66967010498047},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":4.241986274719238,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-5.950894355773926,"y":-0.32988816499710085,"z":-112.93682098388672},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.159585952758789,"orthographic":true}
+>>>>>>> 이인환
