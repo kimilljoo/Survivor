@@ -24,7 +24,17 @@ public class Monster : MonoBehaviour
         TraceToTarget();
     }
 
-    private void TraceToTarget()
+    public void InitEnemy(AnimationClip animation = null, float moveSpeed = 1.0f , float healthPoint = 100.0f, int damage = 1)
+    {
+        this.moveSpeed = moveSpeed;
+        this.healthPoint = healthPoint;
+        this.damage = damage;
+
+        if (animation)
+            GetComponent<Animation>().clip = animation;
+    }
+
+    private void TraceToTarget() // 추적
     {
         if (!target) return;
 
@@ -43,7 +53,7 @@ public class Monster : MonoBehaviour
         {
             healthPoint = 0;
 
-            Destroy(gameObject); // 오브젝트 풀링 적용시 , 위치나 SetActive를 조정하는 방안이 있음. Queue, List를 사용할 수도 있는 것.
+            gameObject.SetActive(false); // 오브젝트 풀링 적용시 , 위치나 SetActive를 조정하는 방안이 있음. Queue, List를 사용할 수도 있는 것.
         }
     }
 

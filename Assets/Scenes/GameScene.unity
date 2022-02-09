@@ -434,6 +434,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2381160600168995291, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
+      propertyPath: area
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381160600168995291, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
       propertyPath: speed
       value: 0.05
       objectReference: {fileID: 0}
@@ -445,17 +449,25 @@ PrefabInstance:
       propertyPath: coolTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2381160600168995291, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
+      propertyPath: weaponName
+      value: Lighting Bolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381160600168995291, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
+      propertyPath: attackspeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2381160600168995292, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2381160600168995292, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.64
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2381160600168995292, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.54
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2381160600168995292, guid: 73163fc6c262b5e4aac9fe394b1c1aa1, type: 3}
       propertyPath: m_LocalPosition.z

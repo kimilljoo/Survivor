@@ -29,6 +29,10 @@ public class PlayerHealthPoint : MonoBehaviour
             }
 
         }
+
+        StopAllCoroutines();
+        StartCoroutine(HitSpriteCoroutine());
+
         UpdateHealthPointImage(health);
     }
     private void UpdateHealthPointImage(float curhealthpoint)
@@ -46,5 +50,16 @@ public class PlayerHealthPoint : MonoBehaviour
         Debug.Log("Player Revive");
 
         health = GetComponent<MainCharacterScript>().maxHp / 2.0f;
+    }
+
+    private IEnumerator HitSpriteCoroutine() // 피격시 색깔 시뻘건색 되는거
+    {
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+        spriteRenderer.color = Color.red;
+
+        yield return new WaitForSeconds(0.1f);
+
+        spriteRenderer.color = Color.white;
     }
 }

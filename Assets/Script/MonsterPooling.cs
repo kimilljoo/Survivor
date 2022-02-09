@@ -8,7 +8,7 @@ public class MonsterPooling : MonoBehaviour
     private GameObject monster;
     private List<GameObject> monsters;
 
-    private void Start()
+    private void Awake()
     {
         ObjectInit();
     }
@@ -16,9 +16,11 @@ public class MonsterPooling : MonoBehaviour
     private void ObjectInit()
     {
         monsters = new List<GameObject>();
-        for (int i = 0; i < 500; ++i)
+        monsters.Clear();
+
+        for (int i = 0; i < 300; ++i)
         {
-            GameObject gameObject = Instantiate(monster);
+            GameObject gameObject = Instantiate(monster, transform.position , Quaternion.identity, transform); // Hierarchy 창에서 잘 보이기 위해 MonsterPool Object의 자식으로 상속함
             monsters.Add(gameObject);
             gameObject.SetActive(false);
         }

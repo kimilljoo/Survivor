@@ -53,7 +53,7 @@ public class LightingBolt : Weapon
             //10초 뒤에는 사라질 것
             Destroy(bullet, 10.0f);
 
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(attackspeed);
         }
     }
 }
