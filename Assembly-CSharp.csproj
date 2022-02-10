@@ -63,9 +63,9 @@
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\MonsterPooling.cs" />
+    <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\Monster.cs" />
     <Compile Include="Assets\Script\Weapon\LightingBolt.cs" />
-    <Compile Include="Assets\Script\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

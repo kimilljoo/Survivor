@@ -316,6 +316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressToStart: {fileID: 1610448170}
+  title: {fileID: 438836255}
+  menu: {fileID: 543959008}
 --- !u!1 &438836255
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +329,7 @@ GameObject:
   - component: {fileID: 438836256}
   - component: {fileID: 438836258}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: TitlePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,7 +375,7 @@ GameObject:
   - component: {fileID: 543959011}
   - component: {fileID: 543959010}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: MenuPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

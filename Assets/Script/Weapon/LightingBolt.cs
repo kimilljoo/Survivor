@@ -44,10 +44,11 @@ public class LightingBolt : Weapon
 
             Vector3 dir = list[rand] - transform.position;
 
+            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;//각도 구하기
+
             GameObject bullet = Instantiate(Effect, transform.position, Quaternion.identity, transform);
 
-            bullet.transform.rotation = Quaternion.FromToRotation(Vector3.up, dir);
-            bullet.transform.Rotate(0.0f, 0.0f, 90.0f); // 총이 90도 돌아가서 나옴. Image문제라서 하드코딩으로 밖에 못고침.
+            bullet.transform.rotation = Quaternion.Euler(0, 0, angle);//구한 각도로 변경
             bullet.GetComponent<Rigidbody2D>().AddForce(dir.normalized * speed);
 
             //10초 뒤에는 사라질 것

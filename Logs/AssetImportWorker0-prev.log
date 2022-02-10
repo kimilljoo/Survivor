@@ -15,11 +15,11 @@ D:/Project/Public/Unity Project/Survivor
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-13967
+9756
 Successfully changed project path to: D:/Project/Public/Unity Project/Survivor
 D:/Project/Public/Unity Project/Survivor
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 59.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.10f1 (297d780c91bc)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -35,331 +35,99 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001167 seconds.
+Registered in 0.001164 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 54.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 54.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.275 seconds
+- Completed reload, in  1.178 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003874 seconds.
+Registered in 0.003334 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 66.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 60.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.636 seconds
+- Completed reload, in  1.492 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2099 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 97.7 MB.
 System memory in use after: 97.8 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2538.
-Total: 2.832400 ms (FindLiveObjects: 0.254200 ms CreateObjectMapping: 0.118800 ms MarkObjects: 2.384500 ms  DeleteObjects: 0.073600 ms)
+Total: 4.291800 ms (FindLiveObjects: 0.230700 ms CreateObjectMapping: 0.184800 ms MarkObjects: 3.800000 ms  DeleteObjects: 0.075300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Resource/Character/Ball and Chain Bot/run.png
-  artifactKey: Guid(c6453f2959198fb4e91690eb7864749e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Ball and Chain Bot/run.png using Guid(c6453f2959198fb4e91690eb7864749e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ddde489832a5b76018ffd0b23d688f0') in 0.170730 seconds
-  Import took 0.176524 seconds .
+  path: Assets/Resource/Character/Small Monster/small moidle.png
+  artifactKey: Guid(781302418490fef4da248a52622d90af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Character/Small Monster/small moidle.png using Guid(781302418490fef4da248a52622d90af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22976766ce7326afe3b1969926a8e286') in 0.133316 seconds
+  Import took 0.137810 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Resource/Character/baby boxer/Baby Boxer-Sheet.png
-  artifactKey: Guid(f1cb653c5c2580143b6c034834b0a408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/baby boxer/Baby Boxer-Sheet.png using Guid(f1cb653c5c2580143b6c034834b0a408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42e6b257e5715e090907e9477ba9844') in 0.030267 seconds
-  Import took 0.034523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Resource/Character/Droid Zapper/wake.png
-  artifactKey: Guid(da9289e30aaf53b4f9f015e41d01feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Droid Zapper/wake.png using Guid(da9289e30aaf53b4f9f015e41d01feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e481c410adcb6c2b8e433ef1f7654033') in 0.025530 seconds
-  Import took 0.029495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Resource/Character/Ball and Chain Bot/idle.png
-  artifactKey: Guid(b8ffb6f2c663bd14296113adac846556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Ball and Chain Bot/idle.png using Guid(b8ffb6f2c663bd14296113adac846556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a4881e79d4d1e62bf11d23f5a71f52') in 0.031758 seconds
-  Import took 0.035170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Resource/Character/Ball and Chain Bot/transition to charge.png
-  artifactKey: Guid(c1366784d04220f4a9f8a634be559f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Ball and Chain Bot/transition to charge.png using Guid(c1366784d04220f4a9f8a634be559f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1229369a876f92815056b78d5e367a') in 0.028310 seconds
-  Import took 0.032017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Resource/Character/Ball and Chain Bot/death.png
-  artifactKey: Guid(cdfc83195a917604ea4a216ada2e41da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Ball and Chain Bot/death.png using Guid(cdfc83195a917604ea4a216ada2e41da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568e7fb326f72bc226500a15a624c730') in 0.021748 seconds
-  Import took 0.025300 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Resource/Character/Droid Zapper/damaged and death.png
-  artifactKey: Guid(1b64ffadc20560449b609cebedeaa9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Droid Zapper/damaged and death.png using Guid(1b64ffadc20560449b609cebedeaa9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa368c4972f67cdd85a35c3c4edde2f') in 0.020266 seconds
-  Import took 0.026923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/Resource/Character/Droid Zapper/attack.png
-  artifactKey: Guid(ba54270b83b1cd1478047d65a86ee283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Droid Zapper/attack.png using Guid(ba54270b83b1cd1478047d65a86ee283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5441ec9b23b5e330a9fd0235039fd377') in 0.032641 seconds
-  Import took 0.036594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/Resource/Character/Ball and Chain Bot/charge.png
-  artifactKey: Guid(2e7d2dc9d11795248b3b5d32c4aa101b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Ball and Chain Bot/charge.png using Guid(2e7d2dc9d11795248b3b5d32c4aa101b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ad0089db1bd54be473767c41dc9d36') in 0.046928 seconds
-  Import took 0.051154 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Resource/Character/Ball and Chain Bot/hit.png
-  artifactKey: Guid(849455dfd6a5a2944a1a2d358b21a6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Ball and Chain Bot/hit.png using Guid(849455dfd6a5a2944a1a2d358b21a6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4678b3f7f5b929d5d8a882c4d37dddba') in 0.017639 seconds
-  Import took 0.028982 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Resource/Character/Ball and Chain Bot/attack.png
-  artifactKey: Guid(8313bc1fb97eeb947a90a8435fb83047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Ball and Chain Bot/attack.png using Guid(8313bc1fb97eeb947a90a8435fb83047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f862598abaf3a3771e05a4492e968ad') in 0.023728 seconds
-  Import took 0.027709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Resource/Character/Droid Zapper/run.png
-  artifactKey: Guid(808bf2ba6b183d141a043f27171faef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Droid Zapper/run.png using Guid(808bf2ba6b183d141a043f27171faef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddadcfa6a5c44fe842eea41794237aef') in 0.016172 seconds
-  Import took 0.021802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 206.813981 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/All Attacks.png
-  artifactKey: Guid(4e3ad581a0e1145498de152db542c499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/All Attacks.png using Guid(4e3ad581a0e1145498de152db542c499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890220c32c2a66bb714c62f0bce1b5ba') in 0.017108 seconds
-  Import took 0.022323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/attack 2.png
-  artifactKey: Guid(9dc0e2b2681619d42a367edde38755ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/attack 2.png using Guid(9dc0e2b2681619d42a367edde38755ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba4faf225776670c62857c8b3e56faeb') in 0.020862 seconds
-  Import took 0.027338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000404 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/Run.png
-  artifactKey: Guid(26d45892cbeb0fe40a27593bf45f3638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/Run.png using Guid(26d45892cbeb0fe40a27593bf45f3638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38cae8fa24be1fe168c7506133f2cebb') in 0.025422 seconds
-  Import took 0.036622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/Idle.png
-  artifactKey: Guid(caf812cc7e56134418e621e0d7914f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/Idle.png using Guid(caf812cc7e56134418e621e0d7914f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30acb702af587439b2e9af455d26b049') in 0.029269 seconds
-  Import took 0.033355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001211 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/attack 3.png
-  artifactKey: Guid(9f3c27822f5e23449a179f51a75fed58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/attack 3.png using Guid(9f3c27822f5e23449a179f51a75fed58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9253ec16f3d6e0b292ed78371faf01d1') in 0.024897 seconds
-  Import took 0.030596 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/attack 1.png
-  artifactKey: Guid(ba2d12680fe8b4348b11d8f4d37f2d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/attack 1.png using Guid(ba2d12680fe8b4348b11d8f4d37f2d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac393cdb0d026db0a59add805f3fb4f') in 0.019871 seconds
-  Import took 0.024476 seconds .
+  Time since last request: 0.000356 seconds.
+  path: Assets/Resource/Character/Small Monster/attack.png
+  artifactKey: Guid(f0cc31bc6b787ea49a87a6cbc3050429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Character/Small Monster/attack.png using Guid(f0cc31bc6b787ea49a87a6cbc3050429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e64135d3a4bf084b0f695c95f01c2623') in 0.029065 seconds
+  Import took 0.036290 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000183 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/Damaged & Death.png
-  artifactKey: Guid(047cc848b8a9dc144a5168342747ab15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/Damaged & Death.png using Guid(047cc848b8a9dc144a5168342747ab15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877d266da5af8d9ace17e12b8856742a') in 0.020415 seconds
-  Import took 0.029478 seconds .
+  path: Assets/Resource/Character/Guardian/Guardian.gif
+  artifactKey: Guid(938b4e10d38e71e43b6440f9e7de46fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Character/Guardian/Guardian.gif using Guid(938b4e10d38e71e43b6440f9e7de46fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2011b684591241866adc971222e12d4') in 0.032000 seconds
+  Import took 0.041738 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.518188 seconds.
-  path: Assets/Resource/Character/Spirit Boxer/Spirit Boxer
-  artifactKey: Guid(b01a5675c3106bf478632250bc9f7afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Spirit Boxer/Spirit Boxer using Guid(b01a5675c3106bf478632250bc9f7afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc8cb33fda7a82ce37f65d3514f5666') in 0.009872 seconds
-  Import took 0.013556 seconds .
+  Time since last request: 0.000235 seconds.
+  path: Assets/Resource/Character/Guardian/Guardian Sprite-Sheet.png
+  artifactKey: Guid(d1294469a1abf664d94da9898fbeba04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Character/Guardian/Guardian Sprite-Sheet.png using Guid(d1294469a1abf664d94da9898fbeba04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b881cbbc0677043df336fab5f6032f7') in 0.025677 seconds
+  Import took 0.030873 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.184652 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a928598e813182679aa31898848d1007') in 0.004852 seconds
-  Import took 0.011816 seconds .
+  Time since last request: 0.000073 seconds.
+  path: Assets/Resource/Character/Small Monster/small modeath and damagedt.png
+  artifactKey: Guid(4480d49de4e60c84992c23351e5f216c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Character/Small Monster/small modeath and damagedt.png using Guid(4480d49de4e60c84992c23351e5f216c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '744bd4b165e10b4a8429e810ac0acc67') in 0.020710 seconds
+  Import took 0.024988 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.028410 seconds.
-  path: Assets/Resource/Character/shadow of storms
-  artifactKey: Guid(c3f0f7d716152e245a6b6b048701ae3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shadow of storms using Guid(c3f0f7d716152e245a6b6b048701ae3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c28cb02af21fbf5085949903d5ce341') in 0.016890 seconds
-  Import took 0.024731 seconds .
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resource/Character/Small Monster/small morun.png
+  artifactKey: Guid(458a395a46dee81478a780cf4b5da8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Character/Small Monster/small morun.png using Guid(458a395a46dee81478a780cf4b5da8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab93c4e840b0d9e402ee599513eaa492') in 0.020678 seconds
+  Import took 0.029408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.956960 seconds.
-  path: Assets/Resource/Character/shadow of storms/idle static 1 frame.png
-  artifactKey: Guid(f7ef3b2c6581eba46911b87439297226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shadow of storms/idle static 1 frame.png using Guid(f7ef3b2c6581eba46911b87439297226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508ba31cd737f56ebfe9c290d19b78b6') in 0.027789 seconds
-  Import took 0.031749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.716344 seconds.
+  Time since last request: 60.622033 seconds.
   path: Assets/Resource/Character/shadow of storms/heal charge up.png
   artifactKey: Guid(8d5bb318fc41e1f489e5bceac8601d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shadow of storms/heal charge up.png using Guid(8d5bb318fc41e1f489e5bceac8601d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e998aa671a2b165438dff248b77aa4') in 0.019602 seconds
-  Import took 0.025463 seconds .
+Start importing Assets/Resource/Character/shadow of storms/heal charge up.png using Guid(8d5bb318fc41e1f489e5bceac8601d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1f84a43831ae7d43febe2d5a06d175') in 0.086271 seconds
+  Import took 0.106608 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 180.338484 seconds.
-  path: Assets/Resource/Character/Mud Guard/attack 1.png
-  artifactKey: Guid(2cc4291acc8cbd74a8df35594b60dd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Mud Guard/attack 1.png using Guid(2cc4291acc8cbd74a8df35594b60dd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1d4f5d011eb2772ae01ef4a68e9de0') in 0.020866 seconds
-  Import took 0.026543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Resource/Character/Mud Guard/Run.png
-  artifactKey: Guid(f4eabf90df13adb4dbd5f151f8e4e1af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Mud Guard/Run.png using Guid(f4eabf90df13adb4dbd5f151f8e4e1af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4236d3e7edabbe95c752516e52d388ca') in 0.022539 seconds
-  Import took 0.029984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Resource/Character/Mud Guard/damaged and death.png
-  artifactKey: Guid(e6080c3947b5d414b8d75fde9ace6aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Mud Guard/damaged and death.png using Guid(e6080c3947b5d414b8d75fde9ace6aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728adb392f4a3bbf70928de5ee24a236') in 0.024297 seconds
-  Import took 0.031303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Resource/Character/Mud Guard/attack 2.png
-  artifactKey: Guid(e7f163a8e96fcbe489a2f495d401b9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Mud Guard/attack 2.png using Guid(e7f163a8e96fcbe489a2f495d401b9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c3740f3a92c16b70797c56cf537c0e') in 0.016200 seconds
-  Import took 0.020899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Resource/Character/Mud Guard/idle.png
-  artifactKey: Guid(6c65cc91f53fcfa49b405831048a650a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/Mud Guard/idle.png using Guid(6c65cc91f53fcfa49b405831048a650a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9b4dabeeb9ab1bdd812e0cf893bbea') in 0.023705 seconds
-  Import took 0.030856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.166610 seconds.
-  path: Assets/Resource/Character/shield droid/hit and death.png
-  artifactKey: Guid(ce57f39ba1ceb8646a6d75ae84e92959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/hit and death.png using Guid(ce57f39ba1ceb8646a6d75ae84e92959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18bc8caf47fe67515612f55ca9d8c54') in 0.014750 seconds
-  Import took 0.018681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Resource/Character/shield droid/shield prep.png
-  artifactKey: Guid(cf5939aecd625734cb17e4ecbb93624b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/shield prep.png using Guid(cf5939aecd625734cb17e4ecbb93624b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4031e36c868f0a4a38f3967fbf8ed99') in 0.026766 seconds
-  Import took 0.030277 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/Resource/Character/shield droid/shock attack.png
-  artifactKey: Guid(1d1091c8c7dccb64094f5ad3697a95fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/shock attack.png using Guid(1d1091c8c7dccb64094f5ad3697a95fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc50b595101e7c084bfbfbdc8738d07e') in 0.017156 seconds
-  Import took 0.024857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Resource/Character/shield droid/shield puulse.png
-  artifactKey: Guid(207e165fc8dce5d4f86b62bb186ae10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/shield puulse.png using Guid(207e165fc8dce5d4f86b62bb186ae10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fedb5cf3e56d8feef10696ba1ff55c') in 0.024867 seconds
-  Import took 0.028814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Resource/Character/shield droid/static idle.png
-  artifactKey: Guid(00d719f24e440e649a33ec0dba09c387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/static idle.png using Guid(00d719f24e440e649a33ec0dba09c387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9613751b37188c7f5396cd8a935e985') in 0.023920 seconds
-  Import took 0.029308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Resource/Character/shield droid/walk.png
-  artifactKey: Guid(918ceea6403a0d7408d85a2552114389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/walk.png using Guid(918ceea6403a0d7408d85a2552114389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b2558268eeeed128b2f0a1626b3f67') in 0.023378 seconds
-  Import took 0.030569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Resource/Character/shield droid/shield finished.png
-  artifactKey: Guid(21ac57cc0b568494aad13955c9f4c245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/shield finished.png using Guid(21ac57cc0b568494aad13955c9f4c245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05bb0f8b4ba1fe12fc76caaf69f1dd92') in 0.020453 seconds
-  Import took 0.027566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/Resource/Character/shield droid/Police Shielder.gif
-  artifactKey: Guid(8597490bb4dd16b4fa801531709ddab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Character/shield droid/Police Shielder.gif using Guid(8597490bb4dd16b4fa801531709ddab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aacba2d825709ba0406daacd137e1465') in 0.031706 seconds
-  Import took 0.038025 seconds .
+  Time since last request: 348.562631 seconds.
+  path: Assets/Resource/Character/shadow of storms/idle static 1 frame.png
+  artifactKey: Guid(f7ef3b2c6581eba46911b87439297226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Character/shadow of storms/idle static 1 frame.png using Guid(f7ef3b2c6581eba46911b87439297226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47846dd40f505b75b42517bbea161e06') in 0.031754 seconds
+  Import took 0.047905 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
