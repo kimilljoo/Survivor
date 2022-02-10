@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1255393759497398267}
   m_Layer: 0
   m_Name: Monster
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  healthPoint: 100
 --- !u!61 &760104936957217526
 BoxCollider2D:
   m_ObjectHideFlags: 0

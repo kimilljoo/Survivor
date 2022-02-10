@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    List<Weapon> weapons = new List<Weapon>();
+    public List<Weapon> weapons { get; private set; } = new List<Weapon>();
     private GameObject defaultWeapon = null;
 
     private void Start()

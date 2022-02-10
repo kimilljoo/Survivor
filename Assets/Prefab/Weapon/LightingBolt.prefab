@@ -94,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 2381160600168995295}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f57adcc3ff880c346b3d61e771f2281e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -115,16 +115,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54264b5aaaf1d95419d20c8123ff29c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName: 
+  weaponName: Lighting Bolt
   coolTime: 0.5
   damage: 10
   totaldamage: 0
+  attackspeed: 0.1
   speed: 0.1
   amount: 2
   duration: 0
   level: 0
   is_Non_coolTime: 0
-  attackspeed: 0
   is_passive: 0
   maxAttackRange: 15
   Effect: {fileID: 3811910828477676489, guid: 75f673d9520b26b4b95caef3a27b6211, type: 3}

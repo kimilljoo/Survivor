@@ -13,7 +13,7 @@ public class LightingBolt : Weapon
 
         RaycastHit2D[] hits;
 
-        hits = Physics2D.CircleCastAll(transform.position, 15.0f, Vector2.zero);
+        hits = Physics2D.CircleCastAll(transform.position, maxAttackRange, Vector2.zero);
 
         if (hits == null) return;  // 캐스트 안잡히면 컷.
 
@@ -23,7 +23,9 @@ public class LightingBolt : Weapon
         for (int j = 0; j < hits.Length; j++)
         {
             if (hits[j].collider.gameObject.tag == "Enemy")
+            {
                 list.Add(hits[j].collider.gameObject.transform.position);
+            }
         }
 
         if (list.Count == 0) return; // 적이 0마리면 컷.
@@ -44,16 +46,17 @@ public class LightingBolt : Weapon
 
             Vector3 dir = list[rand] - transform.position;
 
+            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;//각도 구하기
+
             GameObject bullet = Instantiate(Effect, transform.position, Quaternion.identity, transform);
 
-            bullet.transform.rotation = Quaternion.FromToRotation(Vector3.up, dir);
-            bullet.transform.Rotate(0.0f, 0.0f, 90.0f); // 총이 90도 돌아가서 나옴. Image문제라서 하드코딩으로 밖에 못고침.
+            bullet.transform.rotation = Quaternion.Euler(0, 0, angle);//구한 각도로 변경
             bullet.GetComponent<Rigidbody2D>().AddForce(dir.normalized * speed);
 
             //10초 뒤에는 사라질 것
             Destroy(bullet, 10.0f);
 
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(attackspeed);
         }
     }
 }
