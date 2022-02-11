@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class PlayerHealthPoint : MonoBehaviour
 {
     [SerializeField] private Image hpImage;
+    [SerializeField]
+    private GameObject gameOver;//나중에 고칠거
     public void GetHitDamage(float damage, ref float health, ref int reviveCount)
     {
         if (health == 0) return;
@@ -42,7 +44,8 @@ public class PlayerHealthPoint : MonoBehaviour
 
     private void PlayerDead()
     {
-        Debug.Log("Player Dead");
+        Time.timeScale = 0;
+        gameOver.SetActive(true);
     }
 
     private void PlayerRevive(ref float health)

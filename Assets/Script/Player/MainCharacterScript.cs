@@ -27,13 +27,15 @@ public class MainCharacterScript : MonoBehaviour
     [SerializeField] private float magnet;                       // 아이템을 먹는 범위 증가 ex) 1.4f면 범위 40% 증가
 
     [SerializeField] private int revialCount;                    // 남은 부활 횟수
-
     [Header("OnlyScript")]
     private float curHp;
+
+    private Accessory accessory;
 
     public void Start()
     {
         SetPlayerInfomation(PlayerInfomation.Instance.playerInfo);
+        accessory = new Accessory();
     }
 
     public void SetPlayerInfomation(PlayerInfomation.PlayerInfo playerInfo)

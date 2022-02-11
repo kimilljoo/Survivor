@@ -50,7 +50,7 @@ public class Monster : MonoBehaviour
 
     private void InitSpawn() // 스폰위치를 카메라 밖으로 하는 Func
     {
-        int rand = Random.Range(0, 3);
+        int rand = Random.Range(0, 4);
 
         float x = 0.0f;
         float y = 0.0f;

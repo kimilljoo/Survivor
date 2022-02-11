@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,8 +14,12 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject menu;
 
+    private float playTime;
+
+
     private void Start()
     {
+        Time.timeScale = 1;
         StartCoroutine("PressToStartEffect");
     }
 
@@ -36,12 +41,18 @@ public class UIManager : MonoBehaviour
 
     }
 
-    private void PanelChange(GameObject curPanel,GameObject changePanel)
+    private void PanelChange(GameObject curPanel, GameObject changePanel)
     {
         curPanel.SetActive(false);
         changePanel.SetActive(true);
+
     }
 
+    private void AddTime()
+    {
+        playTime += Time.deltaTime;
 
+
+    }
 
 }

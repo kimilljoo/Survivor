@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInfomation : MonoBehaviour
+public class PlayerInfomation:MonoBehaviour
 {
     /// <summary>
     /// Power Up 할 시 PlayerInfo의 값을 조정하여 캐릭터의 스텟을 더해주면 됨.
