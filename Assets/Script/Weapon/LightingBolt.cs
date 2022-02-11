@@ -13,7 +13,7 @@ public class LightingBolt : Weapon
 
         RaycastHit2D[] hits;
 
-        hits = Physics2D.CircleCastAll(transform.position, 15.0f, Vector2.zero);
+        hits = Physics2D.CircleCastAll(transform.position, maxAttackRange, Vector2.zero);
 
         if (hits == null) return;  // 캐스트 안잡히면 컷.
 
@@ -23,7 +23,9 @@ public class LightingBolt : Weapon
         for (int j = 0; j < hits.Length; j++)
         {
             if (hits[j].collider.gameObject.tag == "Enemy")
+            {
                 list.Add(hits[j].collider.gameObject.transform.position);
+            }
         }
 
         if (list.Count == 0) return; // 적이 0마리면 컷.

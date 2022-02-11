@@ -4,13 +4,14 @@ using UnityEngine;
 
 public abstract class Weapon : MonoBehaviour
 {
+    private float coolTimer = 0.0f;
+
     [Header("**********INFOMATION**********")]
     [SerializeField]
     public string weaponName;
 
     [Header("**********Stats**********")]
     [SerializeField] private float coolTime = 0.0f;
-    private float coolTimer = 0.0f;
     [SerializeField] private float damage;
     public float fixedDamage { get; protected set; }// Attack 함수 호출시 damage * might 값을 저장하기 위해 있는 것. Enemy에서 이것을 이용하여 데미지 계산을 할 예정임.
     [SerializeField] private int totaldamage;     // 게임 끝날때 나오는 토탈 데미지 계수. 이거랑 플레이 시간이랑 나누면 분당, 초당 데미지를 구할 수 있다.
@@ -27,13 +28,6 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected bool is_Non_coolTime = false; // 쿨타임 없는 무기는 쿨타임을 이용해서 공격 속도를 조정하면 됨.
     [Space]
     [SerializeField] protected bool is_passive = false; // 패시브 여부
-
-    private GameObject player;
-
-    private void Start()
-    {
-        player = GameObject.Find("Player");
-    }
 
     private void FixedUpdate()
     {

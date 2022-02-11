@@ -25,6 +25,6 @@ public class PlayerMove : MonoBehaviour
         Vector2 moveDirection = new Vector2(h, v);
 
         animator.SetBool("isMoving", isMoving);
-        transform.Translate(moveDirection.normalized * Time.deltaTime * moveSpeed);
+        transform.Translate(moveDirection.normalized * moveSpeed * Time.deltaTime);
     }
 }
