@@ -119,7 +119,9 @@ MonoBehaviour:
   coolTime: 0.5
   damage: 10
   totaldamage: 0
+  pierceAmount: 2
   attackspeed: 0.1
+  area: 1
   speed: 0.1
   amount: 2
   duration: 0

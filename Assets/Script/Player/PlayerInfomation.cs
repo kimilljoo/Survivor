@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,7 +18,7 @@ public class PlayerInfomation : MonoBehaviour
 
     private static readonly object _lock = new object();
 
-    [System.Serializable]
+    [Serializable]
     public class PlayerInfo
     {
         public float maxHp = 0.0f;              // Ã¼·Â
@@ -50,6 +51,7 @@ public class PlayerInfomation : MonoBehaviour
     {
         Debug.Log("GameManager Constructor");
     }
+
     public static PlayerInfomation Instance
     {
         get
@@ -82,6 +84,6 @@ public class PlayerInfomation : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 }
