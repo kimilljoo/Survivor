@@ -526,7 +526,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 228832204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72fadd9f47390d54f840285de89a7df0, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c0f20bc85329e44a0049d247536bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1785724692242650003, guid: d4574f3f208d12747af3667a3cae6224, type: 3}
