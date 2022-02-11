@@ -7,6 +7,12 @@ using UnityEngine.UI;
 public class PlayerHealthPoint : MonoBehaviour
 {
     [SerializeField] private Image hpImage;
+
+    private void Update()
+    {
+
+    }
+
     public void GetHitDamage(float damage, ref float health, ref int reviveCount)
     {
         if (health == 0) return;
