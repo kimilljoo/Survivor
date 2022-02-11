@@ -5,8 +5,6 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] public List<Weapon> weapons = new List<Weapon>();
-    private GameObject defaultWeapon = null;
-
     private void Start()
     {
         // defaultWeapon = GetComponent<MainCharacterScript>().defaultWeapon;

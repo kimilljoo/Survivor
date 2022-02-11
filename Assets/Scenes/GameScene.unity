@@ -3964,6 +3964,34 @@ PrefabInstance:
       propertyPath: defaultWeapon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6873407071580782679, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
+      propertyPath: playerInfomation.armor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873407071580782679, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
+      propertyPath: playerInfomation.maxHp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873407071580782679, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
+      propertyPath: playerInfomation.might
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873407071580782679, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
+      propertyPath: playerInfomation.amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873407071580782679, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
+      propertyPath: playerInfomation.recovery
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873407071580782679, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
+      propertyPath: playerInfomation.moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873407071580782679, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
+      propertyPath: playerInfomation.revialCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6873407071580782683, guid: 3a24ee7378a4ae44b9c6eb829e3ea57d, type: 3}
       propertyPath: m_RootOrder
       value: 4

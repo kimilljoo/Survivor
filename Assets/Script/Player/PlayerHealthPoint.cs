@@ -43,7 +43,7 @@ public class PlayerHealthPoint : MonoBehaviour
     }
     private void UpdateHealthPointImage(float curhealthpoint)
     {
-        hpImage.fillAmount = curhealthpoint / GetComponent<MainCharacterScript>().maxHp;
+        hpImage.fillAmount = curhealthpoint / GetComponent<MainCharacterScript>().playerInfomation.maxHp;
     }
 
     private void PlayerDead()
@@ -55,7 +55,7 @@ public class PlayerHealthPoint : MonoBehaviour
     {
         Debug.Log("Player Revive");
 
-        health = GetComponent<MainCharacterScript>().maxHp / 2.0f;
+        health = GetComponent<MainCharacterScript>().playerInfomation.maxHp / 2.0f;
     }
 
     private IEnumerator HitSpriteCoroutine() // 피격시 색깔 시뻘건색 되는거
