@@ -5,9 +5,12 @@ using UnityEngine;
 public class Accessory
 {
 
+    MainCharacterScript player = GameObject.Find("Player").GetComponent<MainCharacterScript>();
+
     private delegate void Effect();
     private void Hp()
     {
+        player.maxHp += 10;
         Debug.Log("최대 체력 증가");
     }
     private void Might()
