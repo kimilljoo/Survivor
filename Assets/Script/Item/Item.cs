@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] protected GameObject target;
+    protected GameObject target;
     [SerializeField] private float followSpeed = 5.0f;
+
+    private void Start()
+    {
+        target = GameObject.Find("Player");
+    }
 
     private IEnumerator FollowTarget()
     {
