@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\Monster\Monster.cs" />
     <Compile Include="Assets\Script\Weapon\LightingBolt.cs" />
     <Compile Include="Assets\Script\Monster\MonsterUIController.cs" />
+    <Compile Include="Assets\Script\Weapon\ThunderRing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

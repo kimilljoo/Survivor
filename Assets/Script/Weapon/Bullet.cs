@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
 
     public float fixedDamage { get; private set; } = 0.0f;
 
-    public void SetBullet(Vector3 dir, float speed, int pierceAmount, float fixedDamage)
+    public void SetBullet(Vector3 dir , float speed, int pierceAmount, float fixedDamage, bool isRotate = true)
     {
         this.pierceAmount = pierceAmount;
         this.fixedDamage = fixedDamage;
@@ -18,6 +18,11 @@ public class Bullet : MonoBehaviour
 
         gameObject.transform.rotation = Quaternion.Euler(0, 0, angle);//구한 각도로 변경
         gameObject.GetComponent<Rigidbody2D>().AddForce(dir.normalized * speed);
+
+        if (isRotate == false)
+        {
+            transform.localRotation = Quaternion.identity;
+        }
 
         Destroy(gameObject, 10.0f);
     }

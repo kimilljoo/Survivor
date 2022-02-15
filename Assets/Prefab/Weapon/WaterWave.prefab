@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6102003131144939599}
   m_Layer: 0
   m_Name: WaterWave
-  m_TagString: Weapon
+  m_TagString: PassiveWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +121,7 @@ MonoBehaviour:
   coolTime: 0.15
   damage: 5
   totaldamage: 0
+  pierceAmount: 0
   attackspeed: 1
   area: 2
   speed: 1

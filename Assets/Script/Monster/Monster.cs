@@ -119,6 +119,14 @@ public class Monster : MonoBehaviour
                     GetDamage(collision.gameObject.GetComponent<Bullet>().fixedDamage); // damage * might;
                     collision.gameObject.GetComponentInParent<Weapon>().UpdateTotalDamage(collision.gameObject.GetComponentInParent<Bullet>().fixedDamage);
                 }
+
+                break;
+            case "Weapon":
+                if (collision.gameObject.GetComponentInParent<Weapon>())
+                {
+                    GetDamage(collision.gameObject.GetComponentInParent<Weapon>().fixedDamage); // damage * might;
+                    collision.gameObject.GetComponentInParent<Weapon>().UpdateTotalDamage(collision.gameObject.GetComponentInParent<Weapon>().fixedDamage);
+                }
                 break;
         }
     }
@@ -127,7 +135,7 @@ public class Monster : MonoBehaviour
     {
         switch (collision.gameObject.tag)
         {
-            case "Weapon":
+            case "PassiveWeapon":
                 if(collision.gameObject.GetComponent<Weapon>())
                 {
                     GetDamage(collision.gameObject.GetComponent<Weapon>().fixedDamage); // damage * might;
