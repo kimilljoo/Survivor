@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7457069669784615666}
   - component: {fileID: 6700576226499744453}
   - component: {fileID: 1477973160947874571}
-  - component: {fileID: 8234777645455006040}
+  - component: {fileID: 5096990680384763959}
   m_Layer: 0
   m_Name: ThunderRing
-  m_TagString: Weapon
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6666667, y: 2.6666667}
   m_EdgeRadius: 0
---- !u!114 &8234777645455006040
+--- !u!114 &5096990680384763959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,6 +161,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7457069669784615667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f71ef544fe21e4fa48775a1bc9c006, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3e52a8814dbc042b58ad2123777de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

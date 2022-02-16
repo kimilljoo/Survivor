@@ -22,7 +22,7 @@ public class MainCharacterScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        gameObject.GetComponent<PlayerAttack>().UpdateWeapon(playerInfomation.cooldown, playerInfomation.might);
+        gameObject.GetComponent<PlayerAttack>().UpdateWeapon(playerInfomation);
         gameObject.GetComponent<PlayerMove>().Move(playerInfomation.moveSpeed);
     }
 

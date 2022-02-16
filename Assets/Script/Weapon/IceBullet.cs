@@ -5,7 +5,7 @@ using UnityEngine;
 public class IceBullet : Weapon
 {
     [SerializeField]
-    private GameObject IceEffect;
+    private GameObject Effect;
 
     private Vector2 direction = new Vector2(0.0f, 1.0f);
 
@@ -27,13 +27,13 @@ public class IceBullet : Weapon
 
     private IEnumerator AttackCoroutine()
     {
-        if (!IceEffect) yield break;
+        if (!Effect) yield break;
 
         for (int i = 0; i < amount; i++)
         {
-            GameObject bullet = Instantiate(IceEffect, transform.position, Quaternion.identity, transform);
+            GameObject bullet = Instantiate(Effect, transform.position, Quaternion.identity);
 
-            bullet.GetComponent<Bullet>().SetBullet(direction, speed, pierceAmount, fixedDamage);
+            bullet.GetComponent<Bullet>().SetBullet(transform.localScale, direction.normalized, speed, pierceAmount, fixedDamage, this, duration);
 
             yield return new WaitForSeconds(attackspeed);
         }

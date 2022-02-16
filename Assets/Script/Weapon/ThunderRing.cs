@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ThunderRing : Weapon
 {
-    [SerializeField] private float maxAttackRange = 8.0f; // 15의 지름을 갖는 CircleCast로 가까운적이나, 랜덤의 적한테 공격할 것. 
+    [SerializeField] private float maxAttackRange = 7.0f; // 8의 지름을 갖는 CircleCast. 랜덤의 적한테 공격할 것. 
     [SerializeField] private GameObject Effect;
     public override void Attack()
     {
@@ -41,11 +41,9 @@ public class ThunderRing : Weapon
         {
             int rand = Random.Range(0, list.Count);
 
-            GameObject bullet = Instantiate(Effect, list[rand], Quaternion.identity, transform);
+            GameObject bullet = Instantiate(Effect);
 
-            Destroy(bullet, 1.0f);
-
-            bullet.GetComponent<Bullet>().SetBullet(list[rand], speed, 100, fixedDamage, false);
+            bullet.GetComponent<StillBullet>().SetStillBullet(transform.localScale, list[rand], fixedDamage, 1.0f, this);
 
             yield return new WaitForSeconds(attackspeed);
         }

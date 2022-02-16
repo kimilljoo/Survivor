@@ -41,15 +41,19 @@ public class MonsterPooling : MonoBehaviour
     {
         while (true)
         {
-            int Limit = ((int)(rushTimeToSecond / 180.0f));
-
-            for (int i = 0; i < Limit; i++)
-                monsters.Find(isSpawn => isSpawn.GetComponent<Monster>().isSpawned == false).GetComponent<Monster>().InitEnemy(100.0f, 2, false);
+            int Limit = ((int)(rushTimeToSecond / 120.0f)); // 120초 전까지는... 0.5초당 한마리 , 120초 이후에는 0.5초당 두마리, 180초가 넘어갈시 limit가 50이 되어 한 프레임에 50마리 생성
 
             if (Timer >= rushTimeToSecond)
             {
                 monsters.Find(isSpawn => isSpawn.GetComponent<Monster>().isSpawned == false).GetComponent<Monster>().InitEnemy(100.0f, 3, true);
                 Timer = 0.0f;
+                Limit = 50;
+            }
+
+            for (int i = 0; i < Limit; i++)
+            {
+                if (monsters.Find(isSpawn => isSpawn.GetComponent<Monster>().isSpawned == false)) // 그런것이 있나 먼저 파악해야함.
+                    monsters.Find(isSpawn => isSpawn.GetComponent<Monster>().isSpawned == false).GetComponent<Monster>().InitEnemy(100.0f, 2, false);
             }
 
             yield return new WaitForSeconds(0.5f);
