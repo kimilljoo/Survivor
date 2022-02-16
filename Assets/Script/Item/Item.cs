@@ -6,7 +6,7 @@ public class Item : MonoBehaviour
 {
     [SerializeField] protected GameObject target;
     [SerializeField] private float followSpeed = 5.0f;
-    private bool check = false;
+    public bool check { private get; set; }
 
     private void Start()
     {
@@ -20,6 +20,10 @@ public class Item : MonoBehaviour
             yield return null;
         }
     }
+    public void StartFollowTarget()
+    {
+        StartCoroutine(FollowTarget());
+    }
     private IEnumerator MoveConverseTarget()
     {
         check = true;
@@ -32,7 +36,7 @@ public class Item : MonoBehaviour
             moveTime -= Time.deltaTime;
             yield return null;
         }
-        yield return StartCoroutine(FollowTarget());
+        StartFollowTarget();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
