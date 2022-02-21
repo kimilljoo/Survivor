@@ -28,7 +28,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 492}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -61,12 +61,8 @@ MonoBehaviour:
 >>>>>>> parent of c4ad3229 (2022-02-11)
 =======
     height: 1117
-<<<<<<< HEAD
 >>>>>>> parent of 11176cfe (22-02-14(2))
   m_MinSize: {x: 875, y: 300}
-=======
-  m_MinSize: {x: 875, y: 492}
->>>>>>> parent of 4bfc6ff1 (22-02-16)
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -136,10 +132,9 @@ MonoBehaviour:
 >>>>>>> parent of c4ad3229 (2022-02-11)
 =======
     height: 1067
-  m_MinSize: {x: 909, y: 442}
-  m_MaxSize: {x: 22004, y: 10021}
+  m_MinSize: {x: 910, y: 442}
+  m_MaxSize: {x: 22005, y: 10021}
   vertical: 0
-<<<<<<< HEAD
   controlID: 145
 >>>>>>> parent of bfb91913 (02-14 (1))
 =======
@@ -149,9 +144,6 @@ MonoBehaviour:
   vertical: 0
   controlID: 54
 >>>>>>> parent of 11176cfe (22-02-14(2))
-=======
-  controlID: 133
->>>>>>> parent of 4bfc6ff1 (22-02-16)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +218,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   controlID: 111
 >>>>>>> pr/7
 =======
@@ -238,9 +229,6 @@ MonoBehaviour:
 =======
   controlID: 55
 >>>>>>> parent of 11176cfe (22-02-14(2))
-=======
-  controlID: 134
->>>>>>> parent of 4bfc6ff1 (22-02-16)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,14 +265,9 @@ MonoBehaviour:
 =======
     width: 319
     height: 1067
-<<<<<<< HEAD
 >>>>>>> parent of 11176cfe (22-02-14(2))
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-=======
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> parent of 4bfc6ff1 (22-02-16)
   m_ActualView: {fileID: 12}
 >>>>>>> pr/7
   m_Panes:
@@ -363,14 +346,9 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
 =======
     height: 1067
-<<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 >>>>>>> parent of bfb91913 (02-14 (1))
-=======
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
->>>>>>> parent of 4bfc6ff1 (22-02-16)
   m_ActualView: {fileID: 13}
 >>>>>>> parent of c4ad3229 (2022-02-11)
   m_Panes:
@@ -415,14 +393,9 @@ MonoBehaviour:
 >>>>>>> parent of c4ad3229 (2022-02-11)
 =======
     height: 548
-<<<<<<< HEAD
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 >>>>>>> parent of bfb91913 (02-14 (1))
-=======
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
->>>>>>> parent of 4bfc6ff1 (22-02-16)
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -502,9 +475,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 860c0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_ExpandedIDs: 40fbffff
@@ -514,9 +486,6 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 38fbffff
 >>>>>>> parent of bfb91913 (02-14 (1))
-=======
-      m_ExpandedIDs: 40fbffff
->>>>>>> parent of 4bfc6ff1 (22-02-16)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: EventSystem
@@ -645,7 +614,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_SelectedIDs: 0e430000
     m_LastClickedID: 17166
     m_ExpandedIDs: 00000000f4420000f6420000f8420000fa420000fc420000fe42000004430000064300001643000000ca9a3b
@@ -664,11 +632,6 @@ MonoBehaviour:
     m_LastClickedID: 17242
     m_ExpandedIDs: 000000002c4300002e430000304300003243000034430000364300003843000056430000
 >>>>>>> parent of 11176cfe (22-02-14(2))
-=======
-    m_SelectedIDs: 6e430000
-    m_LastClickedID: 17262
-    m_ExpandedIDs: 0000000020430000224300002443000026430000284300002a4300002c4300004c430000
->>>>>>> parent of 4bfc6ff1 (22-02-16)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Script
@@ -699,7 +662,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_ExpandedIDs: 00000000f4420000f6420000f8420000fa420000fc420000fe42000000430000024300000443000006430000
 =======
     m_ExpandedIDs: 00000000d6430000d8430000da430000dc430000de430000e0430000e2430000e4430000e6430000e8430000
@@ -710,9 +672,6 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000002c4300002e4300003043000032430000344300003643000038430000
 >>>>>>> parent of 11176cfe (22-02-14(2))
-=======
-    m_ExpandedIDs: 0000000020430000224300002443000026430000284300002a4300002c430000
->>>>>>> parent of 4bfc6ff1 (22-02-16)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

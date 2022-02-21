@@ -7,13 +7,9 @@ public class Item : MonoBehaviour
     protected GameObject target;
     [SerializeField] private float followSpeed = 5.0f;
 <<<<<<< HEAD
-<<<<<<< HEAD
     public bool check { private get; set; }
 =======
 >>>>>>> parent of 11176cfe (22-02-14(2))
-=======
-    private bool check = false;
->>>>>>> parent of 4bfc6ff1 (22-02-16)
 
 <<<<<<< HEAD
     private void Start()
@@ -30,6 +26,10 @@ public class Item : MonoBehaviour
             transform.Translate((target.transform.position - this.transform.position).normalized * Time.deltaTime * followSpeed);
             yield return null;
         }
+    }
+    public void StartFollowTarget()
+    {
+        StartCoroutine(FollowTarget());
     }
     private IEnumerator MoveConverseTarget()
     {
@@ -48,13 +48,9 @@ public class Item : MonoBehaviour
             transform.Translate(target.transform.position - this.transform.position * Time.deltaTime * followSpeed);
         }
 <<<<<<< HEAD
-<<<<<<< HEAD
         StartFollowTarget();
 =======
 >>>>>>> parent of 11176cfe (22-02-14(2))
-=======
-        yield return StartCoroutine(FollowTarget());
->>>>>>> parent of 4bfc6ff1 (22-02-16)
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
