@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class ClearWave : MonoBehaviour
 {
+    [Range (1.0f, 100.0f)]
+    [SerializeField] private float SizeUpSpeed;
     void Start()
     {
         StartCoroutine(Waving());
+        Destroy(this.gameObject, 1.0f);
     }
 
     private IEnumerator Waving()
     {
         while (true)
         {
-            transform.localScale += new Vector3(1.0f, 1.0f, 0.0f) * Time.deltaTime;
+            transform.localScale += new Vector3(1.0f, 1.0f, 0.0f) * Time.deltaTime * SizeUpSpeed;
             yield return null;
         }
     }
