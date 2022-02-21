@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\Player\MainCharacterScript.cs" />
     <Compile Include="Assets\Script\Monster\MonsterPooling.cs" />
     <Compile Include="Assets\Script\Weapon\Bullet\StillBullet.cs" />
+    <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Script\ButtonScript.cs" />
@@ -83,7 +84,11 @@
     <Compile Include="Assets\Script\Weapon\WaterAxe.cs" />
     <Compile Include="Assets\Script\Monster\MonsterUIController.cs" />
     <Compile Include="Assets\Script\Accessory.cs" />
-    <Compile Include="Assets\Script\Item.cs" />
+    <Compile Include="Assets\Script\Item\ExpItem.cs" />
+    <Compile Include="Assets\Script\Item\MagnetItem.cs" />
+    <Compile Include="Assets\Script\Item\ClearItem.cs" />
+    <Compile Include="Assets\Script\Item\SmallizeItem.cs" />
+    <Compile Include="Assets\Script\ClearWave.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

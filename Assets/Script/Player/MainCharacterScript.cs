@@ -37,4 +37,9 @@ public class MainCharacterScript : MonoBehaviour
         
         }
     }
+
+    public void AddPlayerExp(int Exp)
+    {
+        //플레이어의 Exp를 더한다. *서강휘
+    }
 }
