@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightingBolt : Weapon
 {
-    [SerializeField] private float maxAttackRange = 15.0f; // 15의 지름을 갖는 CircleCast로 가까운적이나, 랜덤의 적한테 공격할 것. 
+    [SerializeField] private float maxAttackRange = 7.0f; // 15의 지름을 갖는 CircleCast로 가까운적이나, 랜덤의 적한테 공격할 것. 
     [SerializeField] private GameObject Effect;
     public override void Attack()
     {
@@ -43,9 +43,9 @@ public class LightingBolt : Weapon
 
             Vector3 dir = list[rand] - transform.position;
 
-            GameObject bullet = Instantiate(Effect, transform.position, Quaternion.identity, transform);
+            GameObject bullet = Instantiate(Effect, transform.position, Quaternion.identity);
 
-            bullet.GetComponent<Bullet>().SetBullet(dir, speed, pierceAmount, fixedDamage);
+            bullet.GetComponent<Bullet>().SetBullet(transform.localScale, dir, speed, pierceAmount, fixedDamage, this, duration);
 
             yield return new WaitForSeconds(attackspeed);
         }

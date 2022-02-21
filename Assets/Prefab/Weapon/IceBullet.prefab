@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7028734879343448831
+--- !u!1 &7191752184057467528
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7028734879343448828}
-  - component: {fileID: 7028734879343448829}
-  - component: {fileID: 7028734879343448830}
-  - component: {fileID: 7028734879343448803}
+  - component: {fileID: 7191752184057467543}
+  - component: {fileID: 7191752184057467541}
+  - component: {fileID: 7191752184057467542}
+  - component: {fileID: 7191752185054116375}
   m_Layer: 0
   m_Name: IceBullet
   m_TagString: Weapon
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7028734879343448828
+--- !u!4 &7191752184057467543
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7028734879343448831}
+  m_GameObject: {fileID: 7191752184057467528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.09, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7028734879343448829
+--- !u!212 &7191752184057467541
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7028734879343448831}
+  m_GameObject: {fileID: 7191752184057467528}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -84,14 +84,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7028734879343448830
+--- !u!95 &7191752184057467542
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7028734879343448831}
+  m_GameObject: {fileID: 7191752184057467528}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1391d31318ad65242b4ea6fa06db360f, type: 2}
@@ -103,13 +103,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7028734879343448803
+--- !u!114 &7191752185054116375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7028734879343448831}
+  m_GameObject: {fileID: 7191752184057467528}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65bc0f4204a8c554cba96880ce835008, type: 3}
@@ -118,14 +118,12 @@ MonoBehaviour:
   weaponName: IceBullet
   coolTime: 0.5
   damage: 15
-  totaldamage: 0
   pierceAmount: 2
   attackspeed: 0.14
   area: 1
   speed: 0.1
   amount: 1
-  duration: 0
+  duration: 1
   level: 1
-  is_Non_coolTime: 0
   is_passive: 0
   IceEffect: {fileID: 131703574320490675, guid: 6cbd4df992a2c1d45a309fb29251eefd, type: 3}

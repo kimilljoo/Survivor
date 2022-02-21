@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     {
         MainCharacterScript playerinfomation = PlayerInfomation.Instance.player.GetComponent<MainCharacterScript>();
 
-        List<float> list = playerinfomation.ReturnPlayerInfo();
+        List<float> list = playerinfomation.playerInfomation.ReturnPlayerInfo();
 
         UpdateInformationText(list);
     }

@@ -114,10 +114,17 @@ public class Monster : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Bullet":
-                if (collision.gameObject.GetComponent<Bullet>())
+                Debug.Log(collision.gameObject.name);
+                if (collision.gameObject.GetComponent<Bullet>()) // 움직이는 총알
                 {
                     GetDamage(collision.gameObject.GetComponent<Bullet>().fixedDamage); // damage * might;
-                    collision.gameObject.GetComponentInParent<Weapon>().UpdateTotalDamage(collision.gameObject.GetComponentInParent<Bullet>().fixedDamage);
+                    collision.gameObject.GetComponent<Bullet>().parent_Weapon.UpdateTotalDamage(collision.gameObject.GetComponent<Bullet>().fixedDamage);
+                }
+
+                else if (collision.gameObject.GetComponent<StillBullet>()) // 안움직이는 총알
+                {
+                    GetDamage(collision.gameObject.GetComponent<StillBullet>().fixedDamage);
+                    collision.gameObject.GetComponent<StillBullet>().parent_Weapon.UpdateTotalDamage(collision.gameObject.GetComponent<StillBullet>().fixedDamage);
                 }
                 break;
         }
@@ -127,8 +134,8 @@ public class Monster : MonoBehaviour
     {
         switch (collision.gameObject.tag)
         {
-            case "Weapon":
-                if(collision.gameObject.GetComponent<Weapon>())
+            case "PassiveWeapon":
+                if(collision.gameObject.GetComponent<Weapon>()) // Weapon에서 처리
                 {
                     GetDamage(collision.gameObject.GetComponent<Weapon>().fixedDamage); // damage * might;
                     collision.gameObject.GetComponent<Weapon>().UpdateTotalDamage(collision.gameObject.GetComponent<Weapon>().fixedDamage);
