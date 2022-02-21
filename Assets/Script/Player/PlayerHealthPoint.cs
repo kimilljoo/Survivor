@@ -66,3 +66,4 @@ public class PlayerHealthPoint : MonoBehaviour
         spriteRenderer.color = Color.white;
     }
 }
+ 

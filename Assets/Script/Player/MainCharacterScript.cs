@@ -13,11 +13,16 @@ public class MainCharacterScript : MonoBehaviour
     [Header("OnlyScript")]
     private float curHp;
 
+    private Accessory accessories;
+
     public void Start()
     {
         playerInfomation.SetPlayerInfomation(PlayerInfomation.Instance.playerInfo, ref playerInfomation);
 
+
         curHp = playerInfomation.maxHp;
+
+        accessories = new Accessory();
     }
 
     private void FixedUpdate()

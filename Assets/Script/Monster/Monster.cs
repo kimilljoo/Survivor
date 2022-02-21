@@ -25,7 +25,10 @@ public class Monster : MonoBehaviour
     private void FixedUpdate()
     {
         TraceToTarget();
+
     }
+
+    
 
     public void InitEnemy(float healthPoint = 10.0f, int damage = 1, bool isBoss = false, AnimationClip animation = null)
     {
@@ -98,6 +101,7 @@ public class Monster : MonoBehaviour
 
     public void GetDamage(float damage)
     {
+        
         healthPoint -= damage;
 
         if (healthPoint <= 0)
@@ -106,9 +110,10 @@ public class Monster : MonoBehaviour
             isSpawned = false;
             gameObject.SetActive(false); // 오브젝트 풀링 적용시 , 위치나 SetActive를 조정하는 방안이 있음. Queue, List를 사용할 수도 있는 것.
         }
-
         GameObject.Find("MonsterUI").GetComponent<MonsterUIController>().HitDamageUI(Camera.main.WorldToScreenPoint(transform.position), damage.ToString("0")); // 뎀지 0은 말도 안됨 , float를 string으로 바꾸지 않을것임
     }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
