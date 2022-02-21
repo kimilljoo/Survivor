@@ -45,6 +45,51 @@ public class PlayerInfomation : MonoBehaviour
         [Space]
 
         public int revialCount = 0;             // 남은 부활 횟수
+
+        public void SetPlayerInfomation(PlayerInfo playerInfo, ref PlayerInfo playerInfo1)
+        {
+            if (playerInfo == null) return;
+            if (playerInfo1 == null) return;
+
+            playerInfo1.maxHp += playerInfo.maxHp;
+            playerInfo1.recovery += playerInfo.recovery;
+            playerInfo1.armor += playerInfo.armor;
+            playerInfo1.moveSpeed += playerInfo.moveSpeed;
+            playerInfo1.area += playerInfo.area;
+            playerInfo1.might += playerInfo.might;
+            playerInfo1.speed += playerInfo.speed;
+            playerInfo1.duration += playerInfo.duration;
+            playerInfo1.amount += playerInfo.amount;
+            playerInfo1.cooldown += playerInfo.cooldown;
+            playerInfo1.luck += playerInfo.luck;
+            playerInfo1.growth += playerInfo.growth;
+            playerInfo1.greed += playerInfo.greed;
+            playerInfo1.magnet += playerInfo.magnet;
+            playerInfo1.revialCount += playerInfo.revialCount;
+        }
+
+        public List<float> ReturnPlayerInfo() // list로 리턴, GameManager에서 정보업데이트시 씀. 하드코딩
+        {
+            List<float> list = new List<float>();
+
+            list.Add(maxHp);
+            list.Add(recovery);
+            list.Add(armor);
+            list.Add(moveSpeed);
+            list.Add(area);
+            list.Add(might);
+            list.Add(speed);
+            list.Add(duration);
+            list.Add(amount);
+            list.Add(cooldown);
+            list.Add(luck);
+            list.Add(growth);
+            list.Add(greed);
+            list.Add(magnet);
+            list.Add(revialCount);
+
+            return list;
+        }
     }
 
     private PlayerInfomation()

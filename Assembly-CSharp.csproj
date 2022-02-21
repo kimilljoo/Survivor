@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{34467AA8-DCBB-B786-2DE7-70905B7AEE8C}</ProjectGuid>
+    <ProjectGuid>{CAEC3BBE-3D47-485C-7771-F0AE24B05E87}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,6 +56,8 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Weapon\Bullet\Bullet.cs" />
+    <Compile Include="Assets\Script\Weapon\ThunderRing.cs" />
     <Compile Include="Assets\Script\Weapon\Weapon.cs" />
     <Compile Include="Assets\Script\Player\PlayerInfomation.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealthPoint.cs" />
@@ -65,14 +67,19 @@
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Script\ButtonScript.cs" />
+    <Compile Include="Assets\Script\Weapon\IceBullet.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
+    <Compile Include="Assets\Script\Weapon\DarkWhip.cs" />
     <Compile Include="Assets\Script\Monster\Monster.cs" />
     <Compile Include="Assets\Script\Weapon\LightingBolt.cs" />
     <Compile Include="Assets\Script\Monster\MonsterUIController.cs" />
-    <Compile Include="Assets\Script\Weapon\IceBullet.cs" />
-    <Compile Include="Assets\Script\Weapon\Bullet.cs" />
-    <Compile Include="Assets\Script\Weapon\DarkWhip.cs" />
+    <Compile Include="Assets\Script\Weapon\PumKinTracer.cs" />
+    <Compile Include="Assets\Script\Weapon\Bullet\StillBullet.cs" />
+    <Compile Include="Assets\Script\Weapon\Bullet\PumkinTracerBullet.cs" />
+    <Compile Include="Assets\Script\Weapon\WaterAxe.cs" />
+    <Compile Include="Assets\Script\Weapon\Bullet\WaterAxeBullet.cs" />
+    <Compile Include="Assets\Script\Weapon\Reinforced\DarkSkull.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

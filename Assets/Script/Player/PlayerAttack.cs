@@ -5,8 +5,6 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] public List<Weapon> weapons = new List<Weapon>();
-    private GameObject defaultWeapon = null;
-
     private void Start()
     {
         // defaultWeapon = GetComponent<MainCharacterScript>().defaultWeapon;
@@ -15,11 +13,11 @@ public class PlayerAttack : MonoBehaviour
         // GetWeapon(defaultWeapon.GetComponent<Weapon>());
     }
 
-    public void UpdateWeapon(float coolDown, float might)
+    public void UpdateWeapon(PlayerInfomation.PlayerInfo playerInfomation)
     {
         for (int i = 0; i < weapons.Count; i++)
         {
-            weapons[i].UpdateWeapon(coolDown, might);
+            weapons[i].UpdateWeapon(playerInfomation);
         }
     }
 

@@ -24,9 +24,16 @@ public class MonsterUIController : MonoBehaviour
         while (true)
         {
             textObject.GetComponent<Text>().color *= 0.9f;
-            textObject.transform.Translate(Vector3.up); // 서서히 증발해보이는 효과.. 메이플처럼
+            textObject.transform.Translate(Vector3.up);
+
+            textObject.transform.localScale *= 1.1f;
 
             yield return new WaitForSeconds(0.1f);
+
+            if (textObject.GetComponent<Text>().color.a <= 0.6f)
+            {
+                textObject.transform.localScale *= 0.9f;
+            }
 
             if (textObject.GetComponent<Text>().color.a <= 0.3f)
             {
