@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    protected GameObject target;
+    [SerializeField] protected GameObject target;
     [SerializeField] private float followSpeed = 5.0f;
     public bool check { private get; set; }
 
+<<<<<<< HEAD
     private void Start()
     {
         target = GameObject.Find("Player");
     }
+=======
+>>>>>>> parent of bfb91913 (02-14 (1))
     private IEnumerator FollowTarget()
     {
         while (true)
