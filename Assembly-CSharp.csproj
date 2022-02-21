@@ -56,33 +56,22 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Weapon\Bullet\Bullet.cs" />
-    <Compile Include="Assets\Script\Weapon\ThunderRing.cs" />
     <Compile Include="Assets\Script\Weapon\Weapon.cs" />
-    <Compile Include="Assets\Script\Player\PlayerInfomation.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealthPoint.cs" />
-    <Compile Include="Assets\Script\Weapon\WaterWave.cs" />
-    <Compile Include="Assets\Script\Weapon\PumKinTracer.cs" />
     <Compile Include="Assets\Script\Player\MainCharacterScript.cs" />
-    <Compile Include="Assets\Script\Monster\MonsterPooling.cs" />
-    <Compile Include="Assets\Script\Weapon\Bullet\StillBullet.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
-    <Compile Include="Assets\Script\ButtonScript.cs" />
-    <Compile Include="Assets\Script\Weapon\IceBullet.cs" />
+    <Compile Include="Assets\Script\ClearWave.cs" />
+    <Compile Include="Assets\Script\Item\ClearItem.cs" />
+    <Compile Include="Assets\Script\Item\Item.cs" />
+    <Compile Include="Assets\Script\Item\ExpItem.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Script\MonsterPooling.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
-    <Compile Include="Assets\Script\Weapon\DarkWhip.cs" />
-    <Compile Include="Assets\Script\Weapon\Bullet\PumkinTracerBullet.cs" />
-    <Compile Include="Assets\Script\Weapon\Reinforced\DarkSkull.cs" />
-    <Compile Include="Assets\Script\NaviUI.cs" />
-    <Compile Include="Assets\Script\Monster\Monster.cs" />
+    <Compile Include="Assets\Script\Monster.cs" />
     <Compile Include="Assets\Script\Weapon\LightingBolt.cs" />
-    <Compile Include="Assets\Script\Weapon\Bullet\WaterAxeBullet.cs" />
-    <Compile Include="Assets\Script\Weapon\WaterAxe.cs" />
-    <Compile Include="Assets\Script\Monster\MonsterUIController.cs" />
-    <Compile Include="Assets\Script\Accessory.cs" />
-    <Compile Include="Assets\Script\PowerUp.cs" />
+    <Compile Include="Assets\Script\Item\MagnetItem.cs" />
+    <Compile Include="Assets\Script\Item\SmallizeItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

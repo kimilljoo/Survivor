@@ -8,27 +8,79 @@ public class MainCharacterScript : MonoBehaviour
     [SerializeField]    private string charactherName;
     [SerializeField]    public GameObject defaultWeapon;
 
-    [SerializeField] public PlayerInfomation.PlayerInfo playerInfomation;
+    [Header("************Stats************")]
+    [SerializeField]    private float recovery;                     // 재생력
+    [SerializeField]    public float maxHp;                         // 최대체력
+    [SerializeField]    private int armor;                          // 방어력
+    [SerializeField]    private float moveSpeed;                    // 이동속도
+    [SerializeField]    private int maxExp;                    // 이동속도
+    [Space]
+    [SerializeField]    private float might;                        // 공격력 뻥튀기 . ex) 1.4f면 공격력 40% 증가
+    [SerializeField]    private float area;                         // 공격 범위 증가. 만약 스킬이 있다면 스킬 이용시 범위도 증가.
+    [SerializeField]    private float speed;                        // 투사체 속도의 증가.
+    [SerializeField]    private float duration;                     // 공격 지속시간 증가
+    [SerializeField]    private int amount;                         // 투사체 갯수의 증가.
+    [SerializeField]    private float cooldown;                     // 쿨다운의 감소. ex) 0.98f면 쿨타임 2% 감소 or deltaTime에 1.2f 느낌으로 곱해서 20% 쿨감주는 효과같은... 
+    [Space]
+    [SerializeField]    private float luck;                         // 행운, 보물상자나 레벨업시 추가 선택지 or 보상
+    [SerializeField]    private float growth;                       // 경험치 획득률 증가 ex) 1.4f면 경험치 획득률 40% 증가
+    [SerializeField]    private float greed;                        // 골드 획득률 증가 ex) 1.4f면 골드 획득률 40% 증가
+    [SerializeField]    private float magnet;                       // 아이템을 먹는 범위 증가 ex) 1.4f면 범위 40% 증가
+    [Space]
+    [SerializeField]    private int revialCount;// 남은 부활 횟수
 
     [Header("OnlyScript")]
     private float curHp;
-
-    private Accessory accessories;
+    private float curExp;
 
     public void Start()
     {
-        playerInfomation.SetPlayerInfomation(PlayerInfomation.Instance.playerInfo, ref playerInfomation);
+        curHp = this.maxHp; // 싱글턴좀 공부해야겠네.. GameManager.Instance.playerInfo가 안되니 지금 이렇게만 쓰겟음.
+    }
 
+    public void SetPlayerInfomation(GameManager.PlayerInfo playerInfo)
+    {
+        if (playerInfo == null) return;
 
-        curHp = playerInfomation.maxHp;
+        this.maxHp += playerInfo.maxHp;
+        this.recovery += playerInfo.recovery;
+        this.armor += playerInfo.armor;
+        this.area += playerInfo.area;
+        this.might += playerInfo.might;
+        this.speed += playerInfo.speed;
+        this.duration += playerInfo.duration;
+        this.amount += playerInfo.amount;
+        this.cooldown += playerInfo.cooldown;
+        this.luck += playerInfo.luck;
+        this.growth += playerInfo.growth;
+        this.greed += playerInfo.greed;
+        this.magnet += playerInfo.magnet;
+        this.revialCount += playerInfo.revialCount;
 
-        accessories = new Accessory();
+        curHp = this.maxHp;
+    }
+
+    public void AddPlayerExp(int addExp)
+    {
+        //플레이어의 경험치를 더한다.
+        curExp += addExp;
+        //아레는 플레이어의 레벨을 올리는 함수를 만들어서 넣는게 좋을 듯
+        //레벨업 함수는 경험치가 엄청많이 들어왔을때를 대비해 재귀함수로 만들기.
+        if (curExp >= maxExp)
+        {
+            //플레이어의 레벨업.
+            curExp -= maxExp;
+        }
+    }
+    public void HealPlayerHP(float addHP)
+    {
+        //플레이어의 HP를 회복시킨다.
     }
 
     private void FixedUpdate()
     {
-        gameObject.GetComponent<PlayerAttack>().UpdateWeapon(playerInfomation);
-        gameObject.GetComponent<PlayerMove>().Move(playerInfomation.moveSpeed);
+        gameObject.GetComponent<PlayerMove>().Move(moveSpeed);
+        gameObject.GetComponent<PlayerAttack>().UpdateWeapon(cooldown, might);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -37,7 +89,13 @@ public class MainCharacterScript : MonoBehaviour
         { 
             case "Enemy":
                 // 임시 데미지 1 - [방어력 : 0]
-                gameObject.GetComponent<PlayerHealthPoint>().GetHitDamage(collision.gameObject.GetComponent<Monster>().damage - playerInfomation.armor, ref curHp, ref playerInfomation.revialCount);
+                gameObject.GetComponent<PlayerHealthPoint>().GetHitDamage(collision.gameObject.GetComponent<Monster>().damage - armor, ref curHp, ref revialCount);
+                break;
+            case "Item":
+                IItemWork curITemWork = collision.gameObject.GetComponent<IItemWork>();
+                if (curITemWork == null)
+                    break;
+                curITemWork.ItemWork();
                 break;
         
         }

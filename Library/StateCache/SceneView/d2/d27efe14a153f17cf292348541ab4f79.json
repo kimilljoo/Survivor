@@ -1,9 +1,5 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-3.6735141277313234,"y":-0.8752020001411438,"z":-13.497638702392579},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":19.584911346435548,"orthographic":true}
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-132.3997039794922,"y":0.04907054454088211,"z":-0.010072392411530018},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2.339026689529419,"orthographic":true}
->>>>>>> main
-=======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":943.8008422851563,"y":402.368896484375,"z":-125.12056732177735},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":128.79019165039063,"orthographic":true}
->>>>>>> main
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-5.354367256164551,"y":-0.4379604458808899,"z":-5.995240688323975},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.902782440185547,"orthographic":true}
+>>>>>>> pr/7
