@@ -5,9 +5,9 @@ using UnityEngine;
 public class ExpItem : Item, IItemWork
 {
     [SerializeField]
-    private int Exp;
+    private int thisExp;
     public void ItemWork()
     {
-        target.GetComponent<MainCharacterScript>().AddPlayerExp(Exp);
+        target.GetComponent<MainCharacterScript>().AddPlayerExp(thisExp);
     }
 }
