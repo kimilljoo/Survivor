@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":943.8008422851563,"y":402.368896484375,"z":-125.12056732177735},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":128.79019165039063,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-5.354367256164551,"y":-0.4379604458808899,"z":-5.995240688323975},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.902782440185547,"orthographic":true}
 >>>>>>> pr/7
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-4.565289497375488,"y":1.3427929878234864,"z":-553.6150512695313},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":9.556797981262207,"orthographic":true}
+>>>>>>> parent of c4ad3229 (2022-02-11)
