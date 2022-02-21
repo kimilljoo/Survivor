@@ -83,6 +83,7 @@
     <Compile Include="Assets\Script\Weapon\WaterAxe.cs" />
     <Compile Include="Assets\Script\Monster\MonsterUIController.cs" />
     <Compile Include="Assets\Script\Accessory.cs" />
+    <Compile Include="Assets\Script\Item.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
