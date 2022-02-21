@@ -77,7 +77,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
     <Compile Include="Assets\Script\Item\MagnetItem.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Script\Item\SmallizeItem.cs" />
 =======
 >>>>>>> parent of c4ad3229 (2022-02-11)
@@ -87,8 +86,6 @@
 >>>>>>> parent of bfb91913 (02-14 (1))
 =======
 >>>>>>> parent of 11176cfe (22-02-14(2))
-=======
->>>>>>> parent of ff2df139 (2022-02-21 (1))
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
