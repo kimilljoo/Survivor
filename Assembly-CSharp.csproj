@@ -61,6 +61,8 @@
     <Compile Include="Assets\Script\Player\MainCharacterScript.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Script\ClearWave.cs" />
+    <Compile Include="Assets\Script\Item\ClearItem.cs" />
     <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\Item\ExpItem.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
@@ -69,8 +71,7 @@
     <Compile Include="Assets\Script\Monster.cs" />
     <Compile Include="Assets\Script\Weapon\LightingBolt.cs" />
     <Compile Include="Assets\Script\Item\MagnetItem.cs" />
-    <Compile Include="Assets\Script\Item\ClearItem.cs" />
-    <Compile Include="Assets\Script\ClearWave.cs" />
+    <Compile Include="Assets\Script\Item\SmallizeItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
