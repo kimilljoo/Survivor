@@ -6,16 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Weapon
-<<<<<<< HEAD
-<<<<<<< HEAD
   - Bullet
   - PassiveWeapon
   - StillBullet
-=======
-  - Item
->>>>>>> pr/7
-=======
->>>>>>> parent of c4ad3229 (2022-02-11)
   layers:
   - Default
   - TransparentFX
