@@ -6,29 +6,13 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject pausePanel;
-    private bool isEscapemenu = false;
-
-    [SerializeField]
     private List<GameObject> infomationList = new List<GameObject>();
 
     private void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
-            EscapeMenu();
-    }
-
-    private void EscapeMenu()
-    {
-        isEscapemenu = !isEscapemenu;
-        pausePanel.SetActive(isEscapemenu);
-
-        if (isEscapemenu)
-            Time.timeScale = 0;
-        else
-            Time.timeScale = 1;
-
-        UpdateInformation();
+            UpdateInformation();
     }
 
     private void UpdateInformation() // 역시 하드코딩.

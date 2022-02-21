@@ -7,12 +7,12 @@ public class ButtonScript : MonoBehaviour
 {
     public void LoadTitleScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("TitleScene");
     }
 
     public void LoadGameScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void SetTimeScale(int time)

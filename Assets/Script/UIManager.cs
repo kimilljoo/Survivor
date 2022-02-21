@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,46 +14,44 @@ public class UIManager : MonoBehaviour
     private GameObject title;
     [SerializeField]
     private GameObject menu;
-
-    private float playTime;
-
+    [SerializeField]
+    private GameObject pause;
+    [Header("Number")]
+    private int switchNum = 1;
 
     private void Start()
     {
         Time.timeScale = 1;
-        StartCoroutine("PressToStartEffect");
+        switch(SceneManager.GetActiveScene().buildIndex)
+        {
+            case 0:
+                StartCoroutine(UIFunctions.Instance.BlinkEffectCoroutine(pressToStart,0.5f));
+                break;
+
+        }
     }
 
     private void Update()
     {
-        if(Input.anyKeyDown)
+        switch (SceneManager.GetActiveScene().name)
         {
-            PanelChange(title, menu);
+            case "TitleScene":
+                if (Input.anyKeyDown)
+                {
+                    StopAllCoroutines();
+                    UIFunctions.Instance.ChangePanel(title, menu);
+                }
+                break;
+            case "GameScene":
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    ++switchNum;
+                    UIFunctions.Instance.SwitchPanel(pause, ref switchNum);
+                }
+                break;
         }
     }
 
-    private IEnumerator PressToStartEffect()
-    {
-        yield return new WaitForSeconds(0.5f);
-        pressToStart.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
-        pressToStart.SetActive(true);
-        StartCoroutine("PressToStartEffect");
-
-    }
-
-    private void PanelChange(GameObject curPanel, GameObject changePanel)
-    {
-        curPanel.SetActive(false);
-        changePanel.SetActive(true);
-
-    }
-
-    private void AddTime()
-    {
-        playTime += Time.deltaTime;
-
-
-    }
+    
 
 }
