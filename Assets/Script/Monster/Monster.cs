@@ -19,7 +19,7 @@ public class Monster : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.Find("Player");
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void FixedUpdate()
@@ -113,8 +113,26 @@ public class Monster : MonoBehaviour
     {
         switch (collision.gameObject.tag)
         {
+            case "Bullet":
+                if (collision.gameObject.GetComponent<Bullet>())
+                {
+                    GetDamage(collision.gameObject.GetComponent<Bullet>().fixedDamage); // damage * might;
+                    collision.gameObject.GetComponentInParent<Weapon>().UpdateTotalDamage(collision.gameObject.GetComponentInParent<Bullet>().fixedDamage);
+                }
+                break;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
             case "Weapon":
-                GetDamage(collision.gameObject.GetComponentInParent<Weapon>().fixedDamage); // damage * might;
+                if(collision.gameObject.GetComponent<Weapon>())
+                {
+                    GetDamage(collision.gameObject.GetComponent<Weapon>().fixedDamage); // damage * might;
+                    collision.gameObject.GetComponent<Weapon>().UpdateTotalDamage(collision.gameObject.GetComponent<Weapon>().fixedDamage);
+                }
                 break;
         }
     }

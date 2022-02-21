@@ -86,8 +86,8 @@ public class MainCharacterScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        gameObject.GetComponent<PlayerMove>().Move(moveSpeed);
         gameObject.GetComponent<PlayerAttack>().UpdateWeapon(cooldown, might);
+        gameObject.GetComponent<PlayerMove>().Move(moveSpeed);
     }
 
     private void OnCollisionStay2D(Collision2D collision)

@@ -48,7 +48,7 @@ public class MonsterPooling : MonoBehaviour
 
             if (Timer >= rushTimeToSecond)
             {
-                monsters.Find(isSpawn => isSpawn.GetComponent<Monster>().isSpawned == false).GetComponent<Monster>().InitEnemy(100.0f, 2, true);
+                monsters.Find(isSpawn => isSpawn.GetComponent<Monster>().isSpawned == false).GetComponent<Monster>().InitEnemy(100.0f, 3, true);
                 Timer = 0.0f;
             }
 

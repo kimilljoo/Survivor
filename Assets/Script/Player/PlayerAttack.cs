@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public List<Weapon> weapons { get; private set; } = new List<Weapon>();
+    [SerializeField] public List<Weapon> weapons = new List<Weapon>();
     private GameObject defaultWeapon = null;
 
     private void Start()
     {
-        defaultWeapon = GetComponent<MainCharacterScript>().defaultWeapon;
-        weapons.Clear();
+        // defaultWeapon = GetComponent<MainCharacterScript>().defaultWeapon;
+        // weapons.Clear();
 
-        GetWeapon(defaultWeapon.GetComponent<Weapon>());
+        // GetWeapon(defaultWeapon.GetComponent<Weapon>());
     }
 
     public void UpdateWeapon(float coolDown, float might)
