@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] protected GameObject target;
+    protected GameObject target;
     [SerializeField] private float followSpeed = 5.0f;
     public bool check { private get; set; }
 
