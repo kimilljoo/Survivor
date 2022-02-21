@@ -2,6 +2,7 @@ Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.10f1 (297d780c91bc) revision 2719096'; Using compiler version '192528614'; Build Type 'Release'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 OS: 'Windows 10 Education; OS build 19043.1387; Version 2009; 64bit' Language: 'ko' Physical Memory: 16245 MB
 =======
 OS: 'Windows 10 Pro; OS build 19043.1466; Version 2009; 64bit' Language: 'ko' Physical Memory: 16348 MB
@@ -9,6 +10,9 @@ OS: 'Windows 10 Pro; OS build 19043.1466; Version 2009; 64bit' Language: 'ko' Ph
 =======
 OS: 'Windows 10 Home; OS build 19043.1466; Version 2009; 64bit' Language: 'ko' Physical Memory: 16333 MB
 >>>>>>> parent of bfb91913 (02-14 (1))
+=======
+OS: 'Windows 10 Home; OS build 19043.1526; Version 2009; 64bit' Language: 'ko' Physical Memory: 16333 MB
+>>>>>>> parent of ff2df139 (2022-02-21 (1))
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -19,6 +23,7 @@ D:\Unity\2020.3.10f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 C:/Users/FusionSoftware/Documents/GitHub
@@ -73,17 +78,33 @@ Initialize engine version: 2020.3.10f1 (297d780c91bc)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/FusionSoftware/Documents/GitHub/Survivor/Assets
 >>>>>>> pr/7
+=======
+D:/Projects/Survivor/Survivor
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53234
+Successfully changed project path to: D:/Projects/Survivor/Survivor
+D:/Projects/Survivor/Survivor
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.10f1 (297d780c91bc)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projects/Survivor/Survivor/Assets
+>>>>>>> parent of ff2df139 (2022-02-21 (1))
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc5)
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
     Vendor:   
-    VRAM:     8122 MB
-    Driver:   27.20.100.9316
+    VRAM:     5991 MB
+    Driver:   27.21.14.5671
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,10 +507,75 @@ Received Import Request.
   artifactKey: Guid(6dad29af4d778ef44898948c966fc5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Script/Item/Item.cs using Guid(6dad29af4d778ef44898948c966fc5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6c5316fd1f61650550374482750142') in 0.015918 seconds
   Import took 0.019377 seconds .
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001605 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 41.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.882 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004964 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 39.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.8 MB.
+System memory in use after: 97.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2541.
+Total: 2.288100 ms (FindLiveObjects: 0.198900 ms CreateObjectMapping: 0.047000 ms MarkObjects: 1.963800 ms  DeleteObjects: 0.077300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefab/Item/Drop ExpItem LV.1.prefab
+  artifactKey: Guid(ade59a5aef113994abda96a57e0b32fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Item/Drop ExpItem LV.1.prefab using Guid(ade59a5aef113994abda96a57e0b32fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17e1951eb886647123e2caaf80d3b2a') in 0.097239 seconds
+  Import took 0.100373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Prefab/Item/Drop ExpItem LV.3.prefab
+  artifactKey: Guid(37b261f5feea91e48b184394927930bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Item/Drop ExpItem LV.3.prefab using Guid(37b261f5feea91e48b184394927930bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b49edf4719709a8cd270f7008c9e12') in 0.013461 seconds
+  Import took 0.016170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Prefab/Item/Drop ExpItem LV.2.prefab
+  artifactKey: Guid(fde2ec975bec76a4da7095dc1f35db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Item/Drop ExpItem LV.2.prefab using Guid(fde2ec975bec76a4da7095dc1f35db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67fc4ed295a917c0364f1ad175d2fe4') in 0.014588 seconds
+  Import took 0.017389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.171375 seconds.
+  path: Assets/Script/Item/MagnetItem.cs
+  artifactKey: Guid(1f5831ffd3eb85f478f03af49ba58920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Item/MagnetItem.cs using Guid(1f5831ffd3eb85f478f03af49ba58920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f4b38edb65b9f1316638361c1a65b0') in 0.380802 seconds
+  Import took 0.383820 seconds .
+>>>>>>> parent of ff2df139 (2022-02-21 (1))
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.006981 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -576,10 +662,37 @@ System memory in use after: 96.2 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2554.
 Total: 1.733800 ms (FindLiveObjects: 0.166100 ms CreateObjectMapping: 0.067300 ms MarkObjects: 1.487100 ms  DeleteObjects: 0.012300 ms)
+=======
+Registered in 0.005306 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2079 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2551.
+Total: 2.276600 ms (FindLiveObjects: 0.204500 ms CreateObjectMapping: 0.046900 ms MarkObjects: 2.003300 ms  DeleteObjects: 0.021000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2858.164597 seconds.
+  path: Assets/Script/Item/MagnetItem.cs
+  artifactKey: Guid(1f5831ffd3eb85f478f03af49ba58920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Item/MagnetItem.cs using Guid(1f5831ffd3eb85f478f03af49ba58920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ba92941e14602e023d8f412aa81d57') in 0.019489 seconds
+  Import took 0.022772 seconds .
+>>>>>>> parent of ff2df139 (2022-02-21 (1))
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.002623 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -587,9 +700,19 @@ Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.771 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+=======
+Registered in 0.004867 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.818 seconds
+>>>>>>> parent of ff2df139 (2022-02-21 (1))
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<<<<<<< HEAD
 Unloading 2082 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 96.1 MB.
 System memory in use after: 96.2 MB.
@@ -8376,6 +8499,22 @@ System memory in use after: 96.1 MB.
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2544.
 Total: 1.874000 ms (FindLiveObjects: 0.201500 ms CreateObjectMapping: 0.055700 ms MarkObjects: 1.602700 ms  DeleteObjects: 0.013400 ms)
 >>>>>>> parent of 4bfc6ff1 (22-02-16)
+=======
+Unloading 2079 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2554.
+Total: 1.850700 ms (FindLiveObjects: 0.194600 ms CreateObjectMapping: 0.046500 ms MarkObjects: 1.595700 ms  DeleteObjects: 0.013300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 597.162530 seconds.
+  path: Assets/Script/Item/MagnetItem.cs
+  artifactKey: Guid(1f5831ffd3eb85f478f03af49ba58920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Item/MagnetItem.cs using Guid(1f5831ffd3eb85f478f03af49ba58920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b985a0f502f9c049cd66481fda07c2b2') in 0.005563 seconds
+  Import took 0.008405 seconds .
+>>>>>>> parent of ff2df139 (2022-02-21 (1))
 
 A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
  * C:/Users/FUSION~1/AppData/Local/Temp/Unity/Editor/Crashes

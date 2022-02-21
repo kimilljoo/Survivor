@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    protected GameObject target;
+    [SerializeField] protected GameObject target;
     [SerializeField] private float followSpeed = 5.0f;
 <<<<<<< HEAD
 <<<<<<< HEAD
