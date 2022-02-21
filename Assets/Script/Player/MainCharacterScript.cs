@@ -13,7 +13,6 @@ public class MainCharacterScript : MonoBehaviour
     [SerializeField]    public float maxHp;                         // 최대체력
     [SerializeField]    private int armor;                          // 방어력
     [SerializeField]    private float moveSpeed;                    // 이동속도
-    [SerializeField]    private int maxExp;                    // 이동속도
     [Space]
     [SerializeField]    private float might;                        // 공격력 뻥튀기 . ex) 1.4f면 공격력 40% 증가
     [SerializeField]    private float area;                         // 공격 범위 증가. 만약 스킬이 있다면 스킬 이용시 범위도 증가.
@@ -31,7 +30,6 @@ public class MainCharacterScript : MonoBehaviour
 
     [Header("OnlyScript")]
     private float curHp;
-    private float curExp;
 
     public void Start()
     {
@@ -60,23 +58,6 @@ public class MainCharacterScript : MonoBehaviour
         curHp = this.maxHp;
     }
 
-    public void AddPlayerExp(int addExp)
-    {
-        //플레이어의 경험치를 더한다.
-        curExp += addExp;
-        //아레는 플레이어의 레벨을 올리는 함수를 만들어서 넣는게 좋을 듯
-        //레벨업 함수는 경험치가 엄청많이 들어왔을때를 대비해 재귀함수로 만들기.
-        if (curExp >= maxExp)
-        {
-            //플레이어의 레벨업.
-            curExp -= maxExp;
-        }
-    }
-    public void HealPlayerHP(float addHP)
-    {
-        //플레이어의 HP를 회복시킨다.
-    }
-
     private void FixedUpdate()
     {
         gameObject.GetComponent<PlayerMove>().Move(moveSpeed);
@@ -90,12 +71,6 @@ public class MainCharacterScript : MonoBehaviour
             case "Enemy":
                 // 임시 데미지 1 - [방어력 : 0]
                 gameObject.GetComponent<PlayerHealthPoint>().GetHitDamage(collision.gameObject.GetComponent<Monster>().damage - armor, ref curHp, ref revialCount);
-                break;
-            case "Item":
-                IItemWork curITemWork = collision.gameObject.GetComponent<IItemWork>();
-                if (curITemWork == null)
-                    break;
-                curITemWork.ItemWork();
                 break;
         
         }
