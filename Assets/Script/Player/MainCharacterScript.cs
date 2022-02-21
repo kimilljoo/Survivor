@@ -8,14 +8,18 @@ public class MainCharacterScript : MonoBehaviour
     [SerializeField]    private string charactherName;
     [SerializeField]    public GameObject defaultWeapon;
 
-    [SerializeField] public PlayerInfomation.PlayerInfo playerInfomation;
+    [SerializeField]    public PlayerInfomation.PlayerInfo playerInfomation;
 
     [Header("OnlyScript")]
     private float curHp;
 
+    private Accessory accessories;
+
     public void Start()
     {
         playerInfomation.SetPlayerInfomation(PlayerInfomation.Instance.playerInfo, ref playerInfomation);
+
+        accessories = new Accessory();
 
         curHp = playerInfomation.maxHp;
     }

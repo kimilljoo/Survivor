@@ -21,7 +21,9 @@ public class PowerUp
 
         }
     }
-
+    public int might { get; private set; }
     
+    
+
 
 }
