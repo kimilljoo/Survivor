@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{34467AA8-DCBB-B786-2DE7-70905B7AEE8C}</ProjectGuid>
+    <ProjectGuid>{CAEC3BBE-3D47-485C-7771-F0AE24B05E87}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,14 +67,17 @@
     <Compile Include="Assets\Script\Player\MainCharacterScript.cs" />
     <Compile Include="Assets\Script\Monster\MonsterPooling.cs" />
     <Compile Include="Assets\Script\Weapon\Bullet\StillBullet.cs" />
+    <Compile Include="Assets\Script\Item\SmallizeItem.cs" />
     <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
+    <Compile Include="Assets\Script\Item\ClearItem.cs" />
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Script\ButtonScript.cs" />
     <Compile Include="Assets\Script\Weapon\IceBullet.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\Weapon\DarkWhip.cs" />
+    <Compile Include="Assets\Script\Item\MagnetItem.cs" />
     <Compile Include="Assets\Script\Weapon\Bullet\PumkinTracerBullet.cs" />
     <Compile Include="Assets\Script\Weapon\Reinforced\DarkSkull.cs" />
     <Compile Include="Assets\Script\NaviUI.cs" />
@@ -82,12 +85,9 @@
     <Compile Include="Assets\Script\Weapon\LightingBolt.cs" />
     <Compile Include="Assets\Script\Weapon\Bullet\WaterAxeBullet.cs" />
     <Compile Include="Assets\Script\Weapon\WaterAxe.cs" />
+    <Compile Include="Assets\Script\Item\ExpItem.cs" />
     <Compile Include="Assets\Script\Monster\MonsterUIController.cs" />
     <Compile Include="Assets\Script\Accessory.cs" />
-    <Compile Include="Assets\Script\Item\ExpItem.cs" />
-    <Compile Include="Assets\Script\Item\MagnetItem.cs" />
-    <Compile Include="Assets\Script\Item\ClearItem.cs" />
-    <Compile Include="Assets\Script\Item\SmallizeItem.cs" />
     <Compile Include="Assets\Script\ClearWave.cs" />
   </ItemGroup>
   <ItemGroup>

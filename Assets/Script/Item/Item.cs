@@ -6,7 +6,8 @@ public class Item : MonoBehaviour
 {
     [SerializeField] protected GameObject target;
     [SerializeField] private float followSpeed = 5.0f;
-    public bool Check { private get; set; }
+    public bool check { private get; set; }
+    protected bool durationItem { private get; set; }
 
     private void Start()
     {
@@ -26,7 +27,7 @@ public class Item : MonoBehaviour
     }
     private IEnumerator MoveConverseTarget()
     {
-        Check = true;
+        check = true;
         Vector3 converseTarget = new Vector2((this.transform.position.x - target.transform.position.x), (this.transform.position.y - target.transform.position.y)).normalized;
         Vector3 resurtPosition = transform.position + converseTarget;
         float moveTime = 0.3f;
@@ -40,9 +41,12 @@ public class Item : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == !target)
+        Debug.Log($"{collision.gameObject}{target}");
+        if (collision == !target)
+        {
             return;
-        if (Check == false)
+        }
+        if (check == false)
             StartCoroutine(MoveConverseTarget());
     }
 
@@ -55,7 +59,18 @@ public class Item : MonoBehaviour
         if (thisItemWork != null)
             thisItemWork.ItemWork();
 
-        Destroy(this.gameObject);
+        if (!durationItem)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            foreach (var collider2D in this.gameObject.GetComponents<Collider2D>())
+            {
+                collider2D.enabled = false;
+            }
+            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 }
 

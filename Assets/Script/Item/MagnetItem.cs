@@ -10,9 +10,8 @@ public class MagnetItem : Item, IItemWork
         ExpItems.AddRange(GameObject.FindObjectsOfType<ExpItem>());
         foreach (var Item in ExpItems)
         {
-            Item.Check = true;
+            Item.check = true;
             Item.StartFollowTarget();
-            Debug.Log(Item.transform.position);
         }
         ExpItems.Clear();
     }
