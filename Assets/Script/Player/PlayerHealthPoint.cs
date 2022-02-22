@@ -8,7 +8,7 @@ public class PlayerHealthPoint : MonoBehaviour
 {
     [SerializeField] private Image hpImage;
     [SerializeField]
-    private GameObject gameOver;//나중에 고칠거
+    private GameObject gameOver;
     public void GetHitDamage(float damage, ref float health, ref int reviveCount)
     {
         if (health == 0) return;

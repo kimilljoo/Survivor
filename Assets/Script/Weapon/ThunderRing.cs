@@ -21,7 +21,7 @@ public class ThunderRing : Weapon
         {
             if (hits[j].collider.gameObject.tag == "Enemy")
             {
-                list.Add(hits[j].collider.gameObject.transform.position);
+                list.Add(new Vector3(hits[j].collider.gameObject.transform.position.x, hits[j].collider.gameObject.transform.position.y,-1));
             }
         }
 

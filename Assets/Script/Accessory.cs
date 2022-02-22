@@ -14,7 +14,7 @@ public class Accessory
         Debug.Log("최대 체력 증가");
     }
     private void Might()
-    { 
+    {
         player.playerInfomation.might += 1;
         Debug.Log("공격력 증가");
     }
