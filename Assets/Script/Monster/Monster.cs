@@ -108,6 +108,7 @@ public class Monster : MonoBehaviour
         {
             healthPoint = 0;
             isSpawned = false;
+            ++GameManager.countKillingMonster;
             gameObject.SetActive(false); // 오브젝트 풀링 적용시 , 위치나 SetActive를 조정하는 방안이 있음. Queue, List를 사용할 수도 있는 것.
         }
         GameObject.Find("MonsterUI").GetComponent<MonsterUIController>().HitDamageUI(Camera.main.WorldToScreenPoint(transform.position), damage.ToString("0")); // 뎀지 0은 말도 안됨 , float를 string으로 바꾸지 않을것임

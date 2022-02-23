@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private float timeSec;
     private float timeMin;
 
+    public static int countKillingMonster;
+
     private void Update()
     {
         timeCalc();

@@ -37,8 +37,8 @@ public class PlayerInfomation:MonoBehaviour
 
         [Space]
 
-        public float luck = 1.0f;               // 경험치 획득률 증가 ex) 1.4f면 경험치 획득률 40% 증가
-        public float growth = 1.0f;
+        public float luck = 1.0f;               // 행운
+        public float growth = 1.0f;             // 경험치 획득률 증가 ex) 1.4f면 경험치 획득률 40% 증가
         public float greed = 1.0f;              // 골드 획득률 증가 ex) 1.4f면 골드 획득률 40% 증가
         public float magnet = 1.0f;             // 아이템을 먹는 범위 증가 ex) 1.4f면 범위 40% 증가
 
