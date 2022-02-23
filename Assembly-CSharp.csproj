@@ -90,6 +90,8 @@
     <Compile Include="Assets\Script\Monster\MonsterUIController.cs" />
     <Compile Include="Assets\Script\Accessory.cs" />
     <Compile Include="Assets\Script\ClearWave.cs" />
+    <Compile Include="Assets\Script\Item\Chest.cs" />
+    <Compile Include="Assets\Script\Item\ItemManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
