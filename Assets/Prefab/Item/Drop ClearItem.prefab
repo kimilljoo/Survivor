@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   followSpeed: 5
+  detectRadius: 1
   Wave: {fileID: 5436460695106463349, guid: 6f551c5ec98d1864ba715a4d5a164884, type: 3}
 --- !u!58 &-7425746968486418817
 CircleCollider2D:
@@ -131,4 +132,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
