@@ -115,6 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3f7e58953185843bdd706684a88e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnRadius: 5
-  SpawnTime: 10
-  items: []
+  spawnRadius: 5
+  spawnTime: 5
+  Items: []
